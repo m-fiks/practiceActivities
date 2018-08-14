@@ -1,0 +1,16 @@
+{
+  "name": "0421",
+  "version": "1.0.0",
+  "description": "Class exercises with constructors and stuff",
+  "main": "programmers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Madeleine Fiksdal",
+  "license": "ISC",
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "inquire": "^0.4.8",
+    "inquirer": "^5.2.0"
+  }
+}

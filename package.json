@@ -1,0 +1,28 @@
+{
+  "name": "practiceactivities",
+  "version": "1.0.0",
+  "description": "practice activities ",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-fiks/practiceActivities.git"
+  },
+  "author": "Madeleine Fiksdal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-fiks/practiceActivities/issues"
+  },
+  "homepage": "https://github.com/m-fiks/practiceActivities#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "geocoder": "^0.2.3",
+    "handlebars": "^4.0.11",
+    "inquirer": "^5.2.0",
+    "nodemon": "^1.17.4",
+    "request": "^2.85.0"
+  },
+  "devDependencies": {}
+}

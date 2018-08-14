@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WISH LIST?</title>
+</head>
+<body>
+    <h1>WISH SAVER</h1>
+
+    <h4>Save Wishes</h4>
+    <ul>
+        {{#each userWish}}
+        <li>ID: {{ id }}</li>
+        <li>Wish: {{ wish }}</li>
+        <br>
+        {{/each}}
+    </ul>
+
+<form action="/" method="POST">
+    <textarea type ="text" name="userWish"></textarea>
+    	<button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

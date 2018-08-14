@@ -1,0 +1,17 @@
+{
+  "name": "maddyweathertime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CLI.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "inquirer": "^5.2.0",
+    "moment": "^2.22.1",
+    "weather-js": "^2.0.0"
+  }
+}

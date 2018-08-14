@@ -1,16 +1,15 @@
 {
-  "name": "starwars",
+  "name": "expresstutorialyoutube",
   "version": "1.0.0",
   "description": "",
-  "main": "server6.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server6.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.2",
     "express": "^4.16.3"
   }
 }

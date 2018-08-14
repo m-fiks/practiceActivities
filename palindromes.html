@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function palindrome(str) {
+        //all lower case
+        str = str.toLowerCase();
+        //remove all nonalphanumeric characters
+        str = str.replace(/[^a-z0-9]/gmi, " ").replace(/\s+/g, "");
+        let reverseStr = str.split('').reverse().join('');
+        console.log(reverseStr);
+        //console.log(str);
+
+        if (str === reverseStr){
+            return true;
+        } else if (str !== reverseStr){
+            return false;
+        };
+       
+    };
+
+
+    console.log(palindrome('boooooot'));
+    console.log(palindrome("E_Y;E"));
+</script>
+</body>
+</html>

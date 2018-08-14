@@ -1,0 +1,41 @@
+<h1>Movie Planner</h1>
+
+<ul>
+    {{#each movies}}
+    <li>
+        <p>{{id}}.) {{movie}}
+        <!--need delete button-->
+        <button type="button">Remove</button>
+        </p>    
+    </li>
+    {{/each}}
+</ul>
+
+<!--Add a plan-->
+<form id="addmovie">
+    <textarea type="text" id="userMov" name="movie"></textarea>
+    <button type="submit" id="addMovie">ADD MOVIE!</button>
+</form>
+
+<!--update movie-->
+
+<script type="text/javascript">
+    $('#addMovie').on("click", (e) => {
+        e.preventDefault();
+
+        const newMovie = {
+            movie: $('#userMov').val()
+        };
+
+        $.ajax("/movies", {
+            type: "POST",
+            data: newMovie
+        }).then( 
+            function() {
+            console.log('worked')
+            //bring user back to 'home page'
+            location.reload();
+        });
+        
+    })
+</script>

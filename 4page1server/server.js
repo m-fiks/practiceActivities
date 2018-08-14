@@ -5,7 +5,6 @@ const port = 7000;
 
 const server = http.createServer(handleRequest);
 
-
 function handleRequest (req, res) {
     let path = req.url;
 

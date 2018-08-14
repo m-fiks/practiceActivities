@@ -1,0 +1,25 @@
+<style>
+    h1 {
+        color: palevioletred;
+       
+    }
+
+    h2{
+        color: black;
+        
+    }
+    li{
+        color:olive;
+       
+    }
+</style>
+
+<h1>All of the icecreams </h1>
+
+<ul>
+    {{#each icecream}}
+    <h2>Name: {{ name }} </h2>
+    <li>Awesomeness level: {{ awesomeness }} </li> 
+    <li>Price: {{ price }} </li> 
+    {{/each}}
+</ul>

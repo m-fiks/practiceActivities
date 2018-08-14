@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    // function findLongestWord(str) {
+    //     //console.log(str.split(" ") );
+    //     let words = str.split(" ");
+    //     //console.log(words);
+    //     longestWord =0;
+    //     for (let i=0; i<words.length; i++){
+    //         let length = words[i].length;
+    //     if (length > longestWord){
+    //         longestWord = length;
+    //     };
+
+    //     };
+        
+    //     return longestWord;
+    //     }
+
+    // findLongestWord("The quick brown fox jumped over the lazy dog");
+
+
+// function titleCase(str) {
+//     str = str.toLowerCase();
+//     str = str.split(" ");
+//     //console.log(str);
+
+//     for (let i=0; i<str.length; i++){
+//         //console.log(str[i])
+//         str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+//         console.log(str[i]);
+    
+//     }
+//     return str.join(' ');
+// }
+
+// titleCase("I'm a little tea pot");
+
+
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34];
+const squareList = (arr) => {
+  "use strict";
+  // change code below this line
+  const newArray = realNumberArray.filter((number) => number > 0 && number % 1 === 0);
+  const squaredIntegers = newArray.map((square) => square * square)
+  // change code above this line
+  return squaredIntegers;
+};
+
+// test your code
+squaredIntegers = squareList(realNumberArray);
+console.log(squaredIntegers);
+console.log(squareList(realNumberArray));
+    
+    </script>
+</body>
+</html>
+
