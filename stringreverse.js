@@ -1,42 +1,42 @@
 // // // Take a string as an input, reverse each individual word, return new string with reversed words.
-// // const strInput = 'The cow jumped over the moon'
-// // const strReverse = (string) => {
-// //     let array = string.split('')
-// //     let newArray = array.reverse().join('')
-// //     return newArray;
-// // }
+const strInput = 'The cow jumped over the moon'
+const strReverse = (string) => {
+    let newString = string.split('').reverse().join('')
+    return newString;
+}
 
-// // console.log(strReverse(strInput))
+console.log(strReverse(strInput))
 
 // // // Write a program that prints the numbers from 1 to 100. 
 // // // If it’s a multiple of 3, it should print “Fizz”. 
 // // // If it’s a multiple of 5, it should print “Buzz”. 
 // // // If it’s a multiple of 3 and 5, it should print “Fizz Buzz”.
 
-// // for (let i=1; i <= 100; i ++) {
-// //     if (i % 3 === 0 && i % 5 === 0) {
-// //         console.log(`${i} Fizz Buzz`);
-// //     }
-// //     else if(i % 3 === 0){
-// //         console.log(`${i} Fizz`);
-// //     }
-// //     else if (i % 5 === 0){
-// //         console.log(`${i} Buzz`);
-// //     }
-// //     else {
-// //         console.log(i)
-// //     }
-// // }
+for (let i=1; i <= 100; i ++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log(`${i} Fizz Buzz`);
+    }
+    else if(i % 3 === 0){
+        console.log(`${i} Fizz`);
+    }
+    else if (i % 5 === 0){
+        console.log(`${i} Buzz`);
+    }
+    else {
+        console.log(i)
+    }
+}
 
 // // //Reverse a sentence ("bob likes dogs" -> "dogs likes bob")
-// // const senInput = "bob likes dogs"
-// // const senReverser = (string) => {
-// //    let array = string.split(' ')
-// //    let newArray = array.reverse().join(' ')
-// //    return newArray;
-// // }
+const senInput = "bob likes dogs"
+const senReverser = (string)  => {
+   let array = string.split(' ')
+   console.log(array)
+   let newArray = array.reverse().join(' ')
+   return newArray;
+}
 
-// // console.log(senReverser(senInput))
+console.log(senReverser(senInput))
 
 
 
@@ -102,17 +102,17 @@
 //   confirmEnding("Bastian", "n");
 //   confirmEnding("Congratulation", "on")
 
-//   function repeatStringNumTimes(str, num) {
-//     // repeat after me
-//     let repeatStr = "";
-//     while (num > 0){
-//     num--;
-//     repeatStr += str;
-//     }
-//     return repeatStr;
-//   }
+  function repeatStringNumTimes(str, num) {
+    // repeat after me
+    let repeatStr = "";
+    while (num > 0){
+    num--;
+    repeatStr += str;
+    }
+    return repeatStr;
+  }
   
-//   console.log(repeatStringNumTimes("abc", 3));
+   console.log(repeatStringNumTimes("abc", 5));
 
 function truncateString(str, num) {
     // Clear out that junk in your trunk
