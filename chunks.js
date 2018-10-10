@@ -8,7 +8,7 @@ function chunkArrayInGroups(arr, size) {
         results.push(arr.splice(0, size))
     }
 
-    console.log(results);
+    return results;
 
   }
   
